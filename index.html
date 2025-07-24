@@ -3,22 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Responsive-Flowers</title>
+    <script src="https://kit.fontawesome.com/ca5f1f4271.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="assets/logo.png" alt="">
-            <ul>
-                <li>Home</li>
-                <li>Shop</li>
-                <li>About us</li>
-                <li>Cart {$56}</li>
+    <!-- header section -->
+    <header class="sm:ml-[7rem] sm:mr-[7rem]">
+        <!-- for mobile device -->
+        <nav class="ml-[1rem] mr-[1rem] sm:hidden flex justify-between mt-[30px] text-[22px]">
+            <p class="font-bold ml-[40px]">9:41</p>
+            <ul class="flex mr-[15px]">
+                <li class="mr-[10px]"><i class="fa-solid fa-chart-simple"></i></li>
+                <li class="mr-[10px]"><i class="fa-solid fa-wifi"></i></li>
+                <li><i class="fa-solid fa-battery-full"></i></li>
             </ul>
         </nav>
+        <!-- for large device -->
+        <nav class="hidden sm:flex sm:justify-between sm:items-center sm:mt-[30px] sm:mb-[150px]">
+            <img class="sm:w-[7rem]" src="assets/logo.png" alt="logo-photo">
+            <ul class="sm:flex sm:gap-[2.5rem]">
+                <li class="sm:font-bold">Home</li>
+                <li class="sm:text-stone-400">Shop</li>
+                <li class="sm:text-stone-400">About us</li>
+                <li class="sm:text-[1rem]"><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</li>
+            </ul>
+        </nav>
+        <!-- for mobile device -->
+        <nav class="ml-[1rem] mr-[1rem] sm:hidden flex justify-between items-end mt-[1.4rem] mb-[1.7rem]">
+            <img class="w-[5rem]" src="assets/logo.png" alt="logo-photo">
+            <ul class="flex">
+                <li class="text-[1.4rem]"><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</li>
+            </ul>
+        </nav>
+        <!-- fresh section -->
+        <section class="flex flex-wrap sm:flex sm:flex-nowrap sm:items-end">
+            <div class="w-full sm:w-[50%] order-2 sm:order-1 ml-[1rem] sm:ml-[0rem] mr-[1rem] sm:mr-[0rem]">
+                <h1 class="font-bold text-[1.8rem] sm:text-[65px]">ALWAYS <span class="text-orange-500">FRESH <span class="hidden sm:contents">FLOWERS</span></span></h1>
+                <h1 class="sm:hidden font-bold text-[1.8rem] text-orange-500">FLOWERS</h1>
+                <p class="sm:w-[90%] text-[14px] sm:text-[22px] text-zinc-500">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+            </div>
+            <img class="w-full sm:w-[50%] order-1 sm:order-2 mb-[1.1rem]" src="assets/hero-flower.png" alt="">
+        </section>
     </header>
     <main>
-
+        <section>
+            
+        </section>
     </main>
 </body>
 </html>
